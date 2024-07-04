@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'PPMonumentBlack';
+  src: url('fonts/PPMonumentExtended-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PPMonumentReg';
+  src: url('fonts/PPMonumentExtended-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PPMonumentLi';
+  src: url('fonts/PPMonumentExtended-Light.otf') format('opentype');
+}
+
+/* header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0%;
+  padding: 5%;
+  }
+
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: 'PPMonumentBlack', Arial, Helvetica, sans-serif;
+}
+
+header h2 {
+  font-size: 24px;
+  color: #bffda3;
+}
+
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'PPMonumentBlack', Arial, Helvetica, sans-serif;
+
+  }
+  h3 {
+    font-family: 'PPMonumentReg', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #bffda3;
+    margin-bottom: 20px;
+  }
+/* Basic styling */
+body {
+  font-family: 'PPMonumentLi', Arial, sans-serif;
+  background-color: #333;;
+  color: #ffffff;
+}
+
+p {
+  font-size: 16px; /* Example font size */
+  line-height: 1.5; /* Increased line spacing */
+}
+
+b {
+  font-family: 'PPMonumentBlack', Arial, Helvetica, sans-serif;
+  background-color: #bffda3;
+  color: #333;
+}
+
+#about {
+  padding: 2%; 
+}
+
+section {
+  padding: 5% 0;
+  text-align: center;
+}
+
+/* Link styling */
+
+a:hover {
+  color: #bffda3;
+}
+
+ a {
+    font-size: 28px; 
+    margin-bottom: 10px;
+    color: #ffffff; 
+    text-decoration: none; /* To remove underlines from links */
+  }
+
+/* menu styling */
+nav {
+  margin-top: 0%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+/* Portfolio Styling */
+
+#portfolio h2{
+  font-family: 'PPMonumentBlack', Arial, Helvetica, sans-serif;
+
+}
+
+#portfolio h3{
+  font-family: 'PPMonumentLi', Arial, Helvetica, sans-serif;
+ color: #bffda3;
+}
+
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+ 
+}
+
+.portfolio-image {
+  flex: 1;
+  max-width: 100%;
+}
+
+.portfolio-image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+
+/* DigiHighlights styling */
+
+/* Add this to your existing CSS in issi.css */
+
+#digiHighlights .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+#digiHighlights .tile {
+  width: 100% !important; /* Add !important */
+  max-width: 100%; /* Ensure the container does not exceed the grid cell width */
+}
+
+#digiHighlights .tile img {
+  width: 100% !important; /* Add !important */
+  height: auto !important; /* Add !important */
+  object-fit: contain;
+}
+
+#digiHighlights .tile:nth-child(1),
+#digiHighlights .tile:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#digiHighlights .tile:nth-child(3) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+#digiHighlights {
+  background-color: #333;
+  color: #fff;
+  padding: 5% 0;
+  text-align: center;
+}
+
+
+#digiHighlights p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#digiHighlights b {
+  font-family: 'PPMonumentBlack', Arial, Helvetica, sans-serif;
+  background-color: #bffda3;
+  color: #333;
+}
+
+#digiHighlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+#digiHighlights ul li {
+  text-align: center; /* Adjust text alignment */
+  margin-left: 20px;
+}
+
+#digiHighlights ul li:before {
+  content: '•'; /* Use a custom bullet point */
+  color: #bffda3;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Styles for elements within the #portfoliozoom section */
+#portfoliozoom .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 1rem;
+}
+
+#portfoliozoom .tile {
+  width: 100%;
+}
+
+#portfoliozoom .tile img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#portfoliozoom .tile:nth-child(1),
+#portfoliozoom .tile:nth-child(2),
+#portfoliozoom .tile:nth-child(3),
+#portfoliozoom .tile:nth-child(4) {
+  grid-column: span 1; /* Adjust the span value as needed */
+  grid-row: span 2;
+}
+
+#portfoliozoom .tile:nth-child(5),
+#portfoliozoom .tile:nth-child(6) {
+  grid-column: span 2; /* Adjust the span value as needed */
+  grid-row: span 1;
+}
+
+#portfoliozoom .tile:nth-child(7) {
+  grid-column: span 4; /* Adjust the span value as needed */
+  grid-row: span 2;
+}
+
+/* Styles for portfoliozoom SSS */
+
+#portfoliozoom2 .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 1rem;
+}
+
+#portfoliozoom2 .tile {
+  width: 100%;
+}
+
+#portfoliozoom2 .tile img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#portfoliozoom2 .tile:nth-child(1) {
+  grid-column: span 4; /* Adjust the span value as needed */
+  grid-row: span 2;
+}
+
+
+
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 28px;
+  }
+
+  header h2 {
+      font-size: 20px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+  }
+
+  nav a {
+      margin: 10px 0;
+  }
+}
